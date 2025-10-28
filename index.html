@@ -6,7 +6,15 @@
     <title>Photofolia</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-+1o3kxO5Lq7ZZ4dZ1bOqzPZCzQOgeWb3YQ6UVJZy3HqF8h3FeCN5Zh3vXjDLQH0C4pLw/vH1W3uRw+YmYOkS+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<!-- AOS (Animate On Scroll) Library -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
     <script src="sw.js"></script>
 </head>
 <body>
@@ -14,7 +22,7 @@
     <nav>
         <ul class="navbar">
             <li>
-                <a href="#home">Home</a>
+                <a class="navbar-brand" href="#home">Photo<span class="colored">Folia</span></a>
             </li>
             <li>
                 <span id="toggler-btn" class="toggler-btn"><i class="fa-solid fa-bars"></i></span>
@@ -31,16 +39,16 @@
 </header>
 
 <div class="wrapper">
-    <section class="hero-section">
+    <section class="hero-section" data-aos="fade-up">
         <h1>
-            Welcome to Photofolia
+            Welcome to <span class="color-1">Photo<span class="colored">Folia</span></span>
         </h1>
         <p>
             Your one-stop destination for stunning photography.
         </p>
-        <button>Get Started</button>
+        <button class="visit">Get Started</button>
     </section>
-    <div class="grid-container">
+    <div class="grid-container" data-aos="fade-up">
         <div class="grid-item item1"><img src="images/img-01.jpeg" loading="lazy" width="100%" height="auto" alt="image-01"></div>
         <div class="grid-item item2"><img src="images/img-02.jpg" loading="lazy" width="100%" height="auto" alt="image-02"></div>
         <div class="grid-item item3"><img src="images/img-03.png" loading="lazy" width="100%" height="auto" alt="image-03"></div>
@@ -74,7 +82,36 @@
         <div class="grid-item item1"><img src="images/img-31.jpg" loading="lazy" width="100%" height="auto" alt="image-31"></div>
         <div class="grid-item item2"><img src="images/img-08.webp" loading="lazy" width="100%" height="auto" alt="image-32"></div>
     </div>
+
+    <div class="pagination">
+  <ul>
+    <li><a href="#" class="prev"><i class="fa-solid fa-angle-left"></i> Prev</a></li>
+    <li><a href="#" class="active">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li class="d-sm-none"><a href="#">4</a></li>
+    <li class="d-sm-none"><a href="#">5</a></li>
+    <li><a href="#" class="next">Next <i class="fa-solid fa-angle-right"></i></a></li>
+  </ul>
 </div>
+
+
+</div>
+
+<footer>
+
+    <div class="social-container">
+  <ul class="social-list">
+    <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+    <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+    <li><a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+    <li><a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+  </ul>
+</div>
+
+    <p>&copy; 2024 <a href="https://photofolia.vercel.app/">PhotoFolia</a>. All rights reserved.</p>
+</footer>
 
     <script src="script.js"></script>
 </body>

@@ -130,6 +130,7 @@ button.visit {
   cursor: pointer;
   transition: 0.3s;
 }
+
 button.visit:hover { background: #1e90ff; }
 
 /* ===== Gallery ===== */
@@ -330,6 +331,10 @@ footer p a:hover { text-decoration: underline; }
 
 .hero-section {
   padding: 2.5rem;
+}
+
+button.visit {
+  padding: 8px 14px;
 }
   .grid-container { grid-template-columns: 1fr; }
   .grid-item { height: 280px; }

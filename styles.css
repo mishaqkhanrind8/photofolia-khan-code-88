@@ -327,6 +327,10 @@ footer p a:hover { text-decoration: underline; }
 }
 
 @media (max-width: 431px) {
+
+.hero-section {
+  padding: 2.5rem;
+}
   .grid-container { grid-template-columns: 1fr; }
   .grid-item { height: 280px; }
   h1 { font-size: 1.5rem; }

@@ -329,8 +329,8 @@ footer p a:hover { text-decoration: underline; }
 @media (max-width: 431px) {
   .grid-container { grid-template-columns: 1fr; }
   .grid-item { height: 280px; }
-  h1 { font-size: 2rem; }
-  p { font-size: 1rem; color: #fff; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.5rem; }
+  p { font-size: 0.9rem; color: #fff; margin-bottom: 1.5rem; }
   li.d-sm-none { display: none; }
   .pagination ul li a { padding: 8px 12px; font-size: 0.9rem; }
 }

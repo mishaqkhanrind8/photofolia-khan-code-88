@@ -330,7 +330,7 @@ footer p a:hover { text-decoration: underline; }
   .grid-container { grid-template-columns: 1fr; }
   .grid-item { height: 280px; }
   h1 { font-size: 2rem; }
-  p { font-size: 1rem; color: #666; margin-bottom: 1.5rem; }
+  p { font-size: 1rem; color: #fff; margin-bottom: 1.5rem; }
   li.d-sm-none { display: none; }
   .pagination ul li a { padding: 8px 12px; font-size: 0.9rem; }
 }
